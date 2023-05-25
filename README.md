@@ -10,3 +10,38 @@ Paper: [arxiv](https://arxiv.org/abs/2210.10992) Homepage: [NIFT](https://github
 
 ![teaser](imgs/teaser.png)
 ![overview](imgs/overview.png)
+
+# Installation
+```
+# libibs
+conda install compilers make cmake qhull pybind11 -c conda-forge
+pip install git+https://github.com/zzilch/libibs
+# libscf
+pip install git+https://github.com/zzilch/libscf
+```
+
+# Methods
+
+## IBS
+Interaction Bisector Surface (IBS) are equidistant to two interacting objects. 
+
+Check `python tutorial/compute_ibs.py` to see how to compute IBS between two objects.
+
+<img src="./imgs/ibs.png" alt="app-screen" width="250" />
+
+## SCF
+SCF is the power spectrum of the normalized spherical function of a point to the object.
+
+Check `python tutorial/compute_scf.py` to see how to copmute SCF of an point relative to an object.
+
+<img src="./imgs/spf.png" alt="app-screen" width="250" />
+
+<img src="./imgs/scf.png" alt="app-screen" width="250" />
+
+## NIF
+NIF is the concatenated neural activations of the SCF prediction network.
+
+<img src="./imgs/NIF.png" alt="app-screen" width="500" />
+
+## NIT
+NIT is the IBS points in the interaction and their associated NIF feature.
