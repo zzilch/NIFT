@@ -27,16 +27,16 @@ Interaction Bisector Surface (IBS) are equidistant to two interacting objects.
 
 Check `python tutorial/compute_ibs.py` to see how to compute IBS between two objects.
 
-<img src="./imgs/ibs.png" width="250" />
+<img src="./imgs/IBS.png" width="250" />
 
 ## SCF
 SCF is the power spectrum of the normalized spherical function of a point to the object.
 
 Check `python tutorial/compute_scf.py` to see how to copmute SCF of an point relative to an object.
 
-<img src="./imgs/spf.png" width="250" />
+<img src="./imgs/SPF.png" width="250" />
 
-<img src="./imgs/scf.png" width="250" />
+<img src="./imgs/SCF.png" width="250" />
 
 ## NIF
 NIF is the concatenated neural activations of the SCF prediction network.
