@@ -12,6 +12,10 @@ Paper: [arxiv](https://arxiv.org/abs/2210.10992) Homepage: [NIFT](https://github
 ![overview](imgs/overview.png)
 
 # Installation
+
+We use the same environment as [NDF](https://github.com/anthonysimeonov/ndf_robot).
+Addtional dependencies are listed below:
+
 ```
 # libibs
 conda install compilers make cmake qhull pybind11 -c conda-forge
@@ -45,3 +49,21 @@ NIF is the concatenated neural activations of the SCF prediction network.
 
 ## NIT
 NIT is the IBS points in the interaction and their associated NIF feature.
+
+# Training
+
+Please first download data according to the intructions of [NDF](https://github.com/anthonysimeonov/ndf_robot). Then run the following command to generate SCFs for traning.
+
+```
+NDF_SOURCE_DIR=/path/to/ndf_robot python scripts/batch_compute_scf.py
+```
+
+Then run the following command to train the model.
+
+```
+NDF_SOURCE_DIR=/path/to/ndf_robot python scripts/train.py --obj_class all --experiment_name nif
+```
+
+# Test
+
+@todo
